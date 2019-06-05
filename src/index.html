@@ -4,15 +4,65 @@
     <title>Overlook Solo Project</title>
   </head>
   <body>
+    <section class="login">
+      <h1>The Chatan Hotel</h1>
+      <label for="username-input">User Name: </label>
+      <input type="text" id="username-input" />
+      <br />
+      <label for="password-input">Password: </label>
+      <input type="password" id="password-input" />
+      <br />
+      <button class="login-btn" id="login-btn">Log In</button>
+    </section>
     <header>
+        <h1>The Chatan Hotel</h1>
+        <h2 class="welcome-msg" id="welcome-msg">Welcome </h2> 
+        <h2 id="curr-customer">Current Customer: None Selected</h2>
       <nav>
-        
+        <button class="main-tab tab" id="main-tab">Main</button>
+        <button class="orders-tab tab" id="orders-tab">Orders</button>
+        <button class="rooms-tab tab" id="rooms-tab">Rooms</button>
+        <button class="customer-tab tab" id="customer-tab">Customer</button>
       </nav>
     </header>
-    <h1>The Chatan Hotel</h1>
-
-    <img src="/images/turing-logo.png" alt="turing logo" height="100px" width="100px">
-
+    <div class="section-styling">
+    <main class="main-section">
+      <h2 class="todays-date" id="todays-date">Today's Date: </h2>
+      <p id="rooms-general">Rooms Available: </p>
+      <p id="charges-general">Total Customer Charges: </p>
+      <p id="occupied-pct">Percent of Hotel Occupied: </p>
+    </main>
+    <section class="orders-section" id="orders-section">
+        <label for="date-search-input">Search Specific Date: </label>
+        <input class="date-search-input" id="date-search-input" type="search" placeholder="DD/MM/YYY" />
+        <button id="order-date-search">Search Date</button>
+        <article class="customer-order-info" id="customer-order-info">
+        </article>
+    </section>
+    <section class="rooms-section" id="rooms-section">
+      <div>
+        <label for="room-date-search">Search Available Room by Date: </label>
+        <input class="room-date-search" id="room-date-search" type="search" placeholder="DD/MM/YYY" />
+        <button id="room-search-btn">Search</button>
+      </div>
+      <article class="customer-room-info" id="customer-room-info">
+      </article>
+      <button id="book-room-btn">Book A Room</button>
+    </section>
+    <section class="customer-section" id="customer-section">
+      <div>
+        <form>
+          <label for="search-input">Find Customer: </label>
+          <input class="search-input" id="search-input" type="search" placeholder="  Search Customer" />
+          <button id="search-customer-btn">Search</button>
+        </form>
+        <button id="add-customer-btn">Add Customer</button>
+      </div>
+      <article class="customer-info" id="customer-info">
+        <p>Please Search a Customer to populate information or add a new customer</p>
+      </article>
+    </section>
+  </div>
     <!-- Do not include the index.js or main.bundle.js file here - it is done automatically by the webpack server -->
   </body>
 </html>

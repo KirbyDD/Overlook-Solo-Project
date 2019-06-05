@@ -1,5 +1,3 @@
-// fetch room data here
-
 class Room {
   constructor(){
 

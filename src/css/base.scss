@@ -1,6 +1,125 @@
 /* This is an example of using Sass, otherwise plain CSS works too*/
-$primary-background: pink;
+$primary-background: lightblue;
+$primary-color: white;
 
 body {
   background-color: $primary-background;
+}
+
+.login {
+  align-items: center;
+  box-shadow: 6px 7px 5px;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 10px 61px;
+  position: absolute;
+  left: 25%;
+  top: 26%;
+  text-align: center;
+  width: 50%;
+}
+
+button {
+  width: 145px;
+  height: 38px;
+  font-size: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .welcome-msg{
+    margin: 0px;
+  }
+}
+
+.tab {
+  background-color: $primary-background;
+  border: none;
+  font-size: 1rem;
+  height: 40px;
+  width: 135px;
+}
+
+.current-tab {
+  @extend .tab;
+  background-color: white;
+}
+
+.section-styling {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-section {
+  align-items: center;
+  box-shadow: 6px 7px 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 455px;
+  padding-top: 80px;
+  width: 80%;
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.orders-section {
+  @extend .main-section;
+  button{
+    margin-top: 20px;
+  }
+}
+
+.rooms-section {
+  @extend .main-section;
+  padding-top: 60px;
+  div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    margin-top: 20px;
+  }
+}
+
+article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-section {
+  @extend .main-section;
+  div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    margin-top: 20px;
+  }
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+input {
+  font-size: 1rem;
+  height: 30px;
+  margin: 15px 0px 10px;
+  -webkit-appearance: none;
+  width: 190px;
 }
