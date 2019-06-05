@@ -10,7 +10,7 @@ class RoomRepo {
   }
 
   availablePct(roomsData){
-    return 100 - (this.roomsAvailable * 100 / roomsData.length);
+    return (100 - (this.roomsAvailable * 100 / roomsData.length)).toFixed(2);
   }
 
   getAllCharges(roomsData, bookingData, servicesData, date){

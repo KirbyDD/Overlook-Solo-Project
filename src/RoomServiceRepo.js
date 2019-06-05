@@ -8,7 +8,6 @@ class RoomServiceRepo {
     let result = todaysList.map(item => {
       return `${item.food}(${item.totalCost})`
     })
-    console.log(result.length)
     if(result.length === 0){
       return "None";
     }

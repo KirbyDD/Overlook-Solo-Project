@@ -19,7 +19,6 @@ class RoomService {
     let workArray = this.serviceData.filter(service => service.date === date);
     let result = workArray.reduce((total, item) => { 
       total+=item.totalCost;
-      console.log(total)
       return total;
     }, 0)
     return result.toFixed(2)
