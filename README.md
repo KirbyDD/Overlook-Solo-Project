@@ -1,4 +1,8 @@
-# Webpack Starter Kit
+# Overlook Solo Project
+
+## Description  
+
+This project was to create an application for a hotel manager to utilize for booking customers and room services.
 
 ## Fork This Repo
 
